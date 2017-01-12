@@ -1424,7 +1424,7 @@ pre.idl.highlight { color: #708090; }
   <div class="head">
    <p data-fill-with="logo"><a class="logo" href="http://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" width="72"> </a> </p>
    <h1 class="p-name no-ref" id="title">Service Workers 1</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Editor’s Draft, <time class="dt-updated" datetime="2017-01-11">11 January 2017</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Editor’s Draft, <time class="dt-updated" datetime="2017-01-12">12 January 2017</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -4219,12 +4219,12 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
      </dl>
      <ol>
       <li data-md="">
-       <p>If <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-2">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a> to resolve <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-3">job promise</a> with <var>value</var> on <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-3">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a> as the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source">task source</a>.</p>
+       <p>If <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-2">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a>, on <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-3">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a>, to resolve <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-3">job promise</a> with <var>value</var>.</p>
       <li data-md="">
        <p>For each <var>equivalentJob</var> in <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-list-of-equivalent-jobs" id="ref-for-dfn-job-list-of-equivalent-jobs-2">list of equivalent jobs</a>:</p>
        <ol>
         <li data-md="">
-         <p>If <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-4">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a> to resolve <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-4">job promise</a> with <var>value</var> on <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-5">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a> as the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source">task source</a>.</p>
+         <p>If <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-4">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a>, on <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-5">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a>, to resolve <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-4">job promise</a> with the value that corresponds to <var>value</var> for <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-6">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object&apos;s-realm">Realm</a>.</p>
        </ol>
      </ol>
     </section>
@@ -4244,12 +4244,12 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
      </dl>
      <ol>
       <li data-md="">
-       <p>If <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-6">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a> to reject <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-5">job promise</a> with <var>reason</var> on <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-7">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a> as the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source">task source</a>.</p>
+       <p>If <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-7">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a>, on <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-8">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a>, to reject <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-5">job promise</a> with <var>reason</var>.</p>
       <li data-md="">
        <p>For each <var>equivalentJob</var> in <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-list-of-equivalent-jobs" id="ref-for-dfn-job-list-of-equivalent-jobs-3">list of equivalent jobs</a>:</p>
        <ol>
         <li data-md="">
-         <p>If <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-8">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a> to reject <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-6">job promise</a> with <var>reason</var> on <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-9">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a> as the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source">task source</a>.</p>
+         <p>If <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-9">client</a> is not null, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a>, on <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-10">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source">DOM manipulation task source</a>, to reject <var>equivalentJob</var>’s <a data-link-type="dfn" href="#dfn-job-promise" id="ref-for-dfn-job-promise-6">job promise</a> with <var>reason</var>.</p>
        </ol>
      </ol>
     </section>
@@ -4275,7 +4275,7 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
          <p>Invoke <a data-link-type="dfn" href="#finish-job" id="ref-for-finish-job-1">Finish Job</a> with <var>job</var> and abort these steps.</p>
        </ol>
       <li data-md="">
-       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-4">script url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-10">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
+       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-4">script url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-11">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
        <ol>
         <li data-md="">
          <p>Invoke <a data-link-type="dfn" href="#reject-job-promise" id="ref-for-reject-job-promise-2">Reject Job Promise</a> with <var>job</var> and a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#securityerror">SecurityError</a></code>" exception.</p>
@@ -4283,7 +4283,7 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
          <p>Invoke <a data-link-type="dfn" href="#finish-job" id="ref-for-finish-job-2">Finish Job</a> with <var>job</var> and abort these steps.</p>
        </ol>
       <li data-md="">
-       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-scope-url" id="ref-for-dfn-job-scope-url-5">scope url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-11">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
+       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-scope-url" id="ref-for-dfn-job-scope-url-5">scope url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-12">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
        <ol>
         <li data-md="">
          <p>Invoke <a data-link-type="dfn" href="#reject-job-promise" id="ref-for-reject-job-promise-3">Reject Job Promise</a> with <var>job</var> and a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#securityerror">SecurityError</a></code>" exception.</p>
@@ -4361,11 +4361,11 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
         <dt data-md="">
          <p>"<code>classic</code>"</p>
         <dd data-md="">
-         <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-classic-worker-script">Fetch a classic worker script</a> given <var>job</var>’s <a data-link-type="dfn" href="https://url.spec.whatwg.org/#concept-url-serializer">serialized</a> <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-7">script url</a>, <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-12">client</a>, "<code>serviceworker</code>", and the to-be-created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object">environment settings object</a> for this service worker.</p>
+         <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-classic-worker-script">Fetch a classic worker script</a> given <var>job</var>’s <a data-link-type="dfn" href="https://url.spec.whatwg.org/#concept-url-serializer">serialized</a> <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-7">script url</a>, <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-13">client</a>, "<code>serviceworker</code>", and the to-be-created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object">environment settings object</a> for this service worker.</p>
         <dt data-md="">
          <p>"<code>module</code>"</p>
         <dd data-md="">
-         <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-module-worker-script-tree">Fetch a module worker script graph</a> given <var>job</var>’s <a data-link-type="dfn" href="https://url.spec.whatwg.org/#concept-url-serializer">serialized</a> <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-8">script url</a>, <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-13">client</a>, "<code>serviceworker</code>", "<code>omit</code>", and the to-be-created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object">environment settings object</a> for this service worker.</p>
+         <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-module-worker-script-tree">Fetch a module worker script graph</a> given <var>job</var>’s <a data-link-type="dfn" href="https://url.spec.whatwg.org/#concept-url-serializer">serialized</a> <a data-link-type="dfn" href="#dfn-job-script-url" id="ref-for-dfn-job-script-url-8">script url</a>, <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-14">client</a>, "<code>serviceworker</code>", "<code>omit</code>", and the to-be-created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object">environment settings object</a> for this service worker.</p>
        </dl>
        <p>To <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-perform-fetch">perform the fetch</a> given <var>request</var>, run the following steps:</p>
        <ol>
@@ -5131,7 +5131,7 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
      </dl>
      <ol>
       <li data-md="">
-       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-scope-url" id="ref-for-dfn-job-scope-url-9">scope url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-14">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
+       <p>If the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a> of <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-scope-url" id="ref-for-dfn-job-scope-url-9">scope url</a> is not <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-client" id="ref-for-dfn-job-client-15">client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin">origin</a>, then:</p>
        <ol>
         <li data-md="">
          <p>Invoke <a data-link-type="dfn" href="#reject-job-promise" id="ref-for-reject-job-promise-11">Reject Job Promise</a> with <var>job</var> and a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#securityerror">SecurityError</a></code>" exception.</p>
@@ -6434,7 +6434,8 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
      <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-perform-fetch">perform the fetch</a>
      <li><a href="https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports">ports</a>
      <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task">queue a task</a>
-     <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm">realm</a>
+     <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object&apos;s-realm">realm <small>(for environment settings object)</small></a>
+     <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm">realm <small>(for global object)</small></a>
      <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context">realm execution context</a>
      <li><a href="https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-referrer-policy">referrer policy <small>(for WorkerGlobalScope)</small></a>
      <li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-referrer-policy">referrer policy <small>(for environment settings object)</small></a>
@@ -8470,11 +8471,11 @@ self<span class="p">.</span>addEventListener<span class="p">(</span><span class=
    <b><a href="#dfn-job-client">#dfn-job-client</a></b><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-job-client-1">Create Job</a>
-    <li><a href="#ref-for-dfn-job-client-2">Resolve Job Promise</a> <a href="#ref-for-dfn-job-client-3">(2)</a> <a href="#ref-for-dfn-job-client-4">(3)</a> <a href="#ref-for-dfn-job-client-5">(4)</a>
-    <li><a href="#ref-for-dfn-job-client-6">Reject Job Promise</a> <a href="#ref-for-dfn-job-client-7">(2)</a> <a href="#ref-for-dfn-job-client-8">(3)</a> <a href="#ref-for-dfn-job-client-9">(4)</a>
-    <li><a href="#ref-for-dfn-job-client-10">Register</a> <a href="#ref-for-dfn-job-client-11">(2)</a>
-    <li><a href="#ref-for-dfn-job-client-12">Update</a> <a href="#ref-for-dfn-job-client-13">(2)</a>
-    <li><a href="#ref-for-dfn-job-client-14">Unregister</a>
+    <li><a href="#ref-for-dfn-job-client-2">Resolve Job Promise</a> <a href="#ref-for-dfn-job-client-3">(2)</a> <a href="#ref-for-dfn-job-client-4">(3)</a> <a href="#ref-for-dfn-job-client-5">(4)</a> <a href="#ref-for-dfn-job-client-6">(5)</a>
+    <li><a href="#ref-for-dfn-job-client-7">Reject Job Promise</a> <a href="#ref-for-dfn-job-client-8">(2)</a> <a href="#ref-for-dfn-job-client-9">(3)</a> <a href="#ref-for-dfn-job-client-10">(4)</a>
+    <li><a href="#ref-for-dfn-job-client-11">Register</a> <a href="#ref-for-dfn-job-client-12">(2)</a>
+    <li><a href="#ref-for-dfn-job-client-13">Update</a> <a href="#ref-for-dfn-job-client-14">(2)</a>
+    <li><a href="#ref-for-dfn-job-client-15">Unregister</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="dfn-job-promise">
