@@ -1,8 +1,8 @@
-# Service workers explained
+# Service workers 解释
 
-## What’s all this then?
+## 那么，这些是什么呢？
 
-Service workers are being developed to answer frequent questions and concerns about the web platform, including:
+正在开发中的**服务工作者** `Service workers ` 来回答关于网络平台的常见问题和疑虑，其中包括：
 
  * An inability to explain (in the [Extensible Web Manifesto](https://extensiblewebmanifesto.org/) sense) HTTP caching and high-level HTTP interactions like the HTML5 AppCache
  * Difficulty in building offline-first web applications in a natural way
